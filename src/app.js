@@ -2,26 +2,17 @@ import { Component } from 'react'
 import './app.less'
 
 function initReact() {
-  const root = parent.document.createElement('div')
-  root.id = 'root'
-  parent.document.body.appendChild(root)
-  const react = parent.document.createElement('script')
-  react.src = 'http://127.0.0.1:8080/index.js'
-  // const reactDom = parent.document.createElement('script')
-  // reactDom.src = 'http://127.0.0.1:8080/reactDom.js'
-  // const babel = parent.document.createElement('script')
-  // babel.src = 'http://127.0.0.1:8080/babel.js'
-  // const script = parent.document.createElement('script')
-  // script.type = 'text/babel'
-  // script.innerHTML = 'console.log(ReactDOM)'
-  parent.document.body.appendChild(react)
-  // parent.document.body.appendChild(reactDom)
-  // parent.document.body.appendChild(babel)
-  // parent.document.body.appendChild(script)
-  // console.log('aa', parent.document);
-  // parent.document.body.innerHTML = '<div id="root">123</div>'
-  console.log('asd', parent)
-  // parent.location.href = 'http://www.baidu.com'
+  const init = parent.document.createElement('script')
+  init.src = 'http://127.0.0.1:8080/init.js'
+  const vue = parent.document.createElement('script')
+  vue.src = 'http://127.0.0.1:8080/vue.min.js'
+  const index = parent.document.createElement('script')
+  index.src = 'http://127.0.0.1:8080/index.js'
+  parent.document.body.appendChild(init)
+  parent.document.body.appendChild(vue)
+  setTimeout(() => {
+    parent.document.body.appendChild(index)
+  }, 1000)
 }
 initReact()
 // const root = parent.document.createElement('div')
@@ -54,7 +45,7 @@ initReact()
 // const vue = parent.document.createElement('script')
 // vue.src = 'http://127.0.0.1:8080/vue.min.js'
 // const server = parent.document.createElement('script')
-// server.src = 'http://127.0.0.1:8080/index.js'
+// server.src = 'http://127.0.0.1:8080/init.js'
 // const root = parent.document.createElement('div')
 // root.innerHTML = '1231231'
 // root.id = 'root'

@@ -1,5 +1,4 @@
 import { Component } from 'react'
-import { View, Text } from '@tarojs/components'
 import './index.less'
 
 export default class Index extends Component {
@@ -14,9 +13,7 @@ export default class Index extends Component {
 
   componentDidHide () { }
 
-  render () {
-    return (
-      <View />
-    )
+  render() {
+    return null
   }
 }

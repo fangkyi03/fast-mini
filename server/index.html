@@ -1,30 +1,18 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <!-- React -->
-    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
-    <!-- React DOM -->
-    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
-    <!-- babel core-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.17.0/babel.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-    <div id="machine-box"></div>
-    <script type="text/babel" >
-        debugger
-        class MachineBox extends React.Component {
-                render() {
-                    return (<div>Hello From React </div>);
-                }
-            }
-        let target = document.getElementById('machine-box');
-
-        ReactDOM.render(
-            <MachineBox />, target
-        )
-    </script>
+    <div id='app'></div>
 </body>
-
+<script>
+    new Vue({
+        el: '#app',
+        template: '<div>123123123123123123123123</div>'
+    })
+</script>
 </html>
