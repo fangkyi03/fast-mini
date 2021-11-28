@@ -41,9 +41,7 @@ function init() {
     parent.document.body.appendChild(root)
     parent.document.body.appendChild(initJS)
     parent.document.body.appendChild(vue)
-    setTimeout(() => {
-        parent.document.body.appendChild(index)
-    }, 1000)
+    parent.document.body.appendChild(index)
 }
 !hasInit && init()
 class App extends Component {

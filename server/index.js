@@ -3,8 +3,8 @@ new Vue({
     template: '<div>121</div>'
 })
 
-wx.login({
-    success() {
+wx.chooseImage({
+    success(res) {
         debugger
     },
     complete(res) {
