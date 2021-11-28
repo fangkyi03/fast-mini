@@ -26,4 +26,19 @@ window.documents['createEvent'] = function (type) {
         }
     }
 }
-console.log('初始化完成')
+
+// const navigator = parent.navigator || parent.__global.navigator
+// const WebSocket = parent.WebSocket || parent.__global.WebSocket
+// const prompt = parent.prompt || parent.__global.prompt
+// const navigatorMatch = navigator.userAgent.match(/port\/(\d*)/)
+// const port = navigatorMatch ? parseInt(navigatorMatch[1]) : 9974
+// const url = "ws://127.0.0.1:" + port;
+// const protocol = `APPSERVICE#${prompt("GET_MESSAGE_TOKEN")}#`
+// let ws = new WebSocket(url, protocol);
+// ws.onopen = function (event) {
+//     debugger
+// }
+// ws.onmessage = function (event) {
+//     console.log('object', event.data)
+//     debugger
+// }

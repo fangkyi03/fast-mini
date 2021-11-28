@@ -1,0 +1,12 @@
+#app {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  z-index: 9999;
+}
