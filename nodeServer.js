@@ -13,7 +13,7 @@ app.get('*', (req, res) => {
     }
     else {
         res.set('Content-Type', 'application/javascript; charset=utf-8')
-        res.send(fs.readFileSync(path.join('./server', `${req.url}`), 'utf-8').replace(/document/g, 'window.documents'))
+        res.send(fs.readFileSync(path.join('./server', `${req.url}`), 'utf-8').replace(/document/g, 'window.documents').replace(/wx/g, 'wxx'))
     }
 })
 app.listen(8080)

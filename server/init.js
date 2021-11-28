@@ -1,3 +1,4 @@
+window['wxx'] = (window['0'] || window['1'])['wx']
 window.documents = {}
 Array.from(Object.getOwnPropertyNames(parent.window.__global.document)).forEach(function (key) {
     window.documents[key] = parent.window.__global.document[key]
@@ -26,7 +27,7 @@ window.documents['createEvent'] = function (type) {
         }
     }
 }
-
+console.log('window', window)
 // const navigator = parent.navigator || parent.__global.navigator
 // const WebSocket = parent.WebSocket || parent.__global.WebSocket
 // const prompt = parent.prompt || parent.__global.prompt
