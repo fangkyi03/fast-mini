@@ -22,3 +22,9 @@ npm run build:weapp && npm run server
 现在的 vite snowpack esbuild 这些的加持下 可以很轻松的就变成秒刷新 不用再长时间的等待了
 
 其次通过修改 wx 让你可以在自己的网页中直接唤起 wx 的所有功能 并且可以正常使用
+
+# 调试页面
+
+首先 我上面这样做以后 微信开发工具是无法正常识别出我的 dom 的 这个时候就得这样做
+在微信开发工具页面 按下 cmd + shift + p 唤起一个调试页面 然后在里面输入 enable AppServer debug Elements 就可以唤起我们的页面了
+你可以在上面像我们网页浏览器一样正常调试页面了
