@@ -4,6 +4,7 @@ npm i
 
 # 启动 server
 
+这里的 npm run build:weapp 只需要执行一次 这个后期可以靠直接输出一个模板项目来解决 就不需要 taro 参与了
 npm run build:weapp && npm run server
 
 # 简介
